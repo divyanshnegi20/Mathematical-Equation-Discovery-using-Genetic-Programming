@@ -1,0 +1,10 @@
+Model,Model Type,Train RMSE,Test RMSE,Test MAE,Test R2,Complexity (Nodes/Params),Interpretability,Discovered Equation,LaTeX,Train Time (s),Inference (us/sample)
+Genetic Programming (Ours),Symbolic Regression (AST),74.30401966427824,76.08243239660581,64.50125253351518,-0.02592233619014328,9,Analytical Equation,31.0284*BMI + 32.0284*BloodPressure + SerumMarker + 151.5578,31.0284 BMI + 32.0284 BloodPressure + SerumMarker + 151.5578,2.648,8.21
+Linear Regression,Linear / White-Box,55.4204644250094,53.82620854959918,45.62446002302067,0.4865084666110976,4,High (Linear Coefficients),N/A (Implicit/Black-Box),N/A,0.0013,1.73
+Ridge Regression,Regularized Linear,63.33814188210273,63.835543652711635,54.86300672196867,0.2777778055478154,4,High (Shrunk Coefficients),N/A (Implicit/Black-Box),N/A,0.0015,1.98
+Polynomial Reg (Deg 2),Polynomial Expansion,54.441262560306676,54.9313023150842,46.86506720086919,0.46520726534525514,11,Medium (Polynomial Terms),N/A (Implicit/Black-Box),N/A,0.0028,8.48
+Polynomial Reg (Deg 3),Polynomial Expansion,52.53161003188308,54.900609942838194,45.500115911886446,0.4658047196706101,21,Medium-Low (Many Terms),N/A (Implicit/Black-Box),N/A,0.0039,8.64
+Decision Tree (CART),Decision Tree,37.90126338090924,64.83275215474286,52.04911692011691,0.2550371369544985,61,Medium (Hierarchical Splits),N/A (Implicit/Black-Box),N/A,0.002,3.63
+Random Forest,Ensemble (Bagging),39.17219503075791,54.34866419533895,44.611527870475406,0.47649183902240677,2576,Low (Black-Box Forest),N/A (Implicit/Black-Box),N/A,0.1574,133.07
+Gradient Boosting,Ensemble (Boosting),37.656668339160845,56.031504789285286,47.964830585672765,0.44357032937527774,704,Low (Sequential Additive Trees),N/A (Implicit/Black-Box),N/A,0.071,6.48
+MLP Neural Network,Neural Network,66.37154603507973,70.906420066481,56.87390950025915,0.10891973333457394,673,Very Low (Opaque Weights),N/A (Implicit/Black-Box),N/A,0.9339,5.99

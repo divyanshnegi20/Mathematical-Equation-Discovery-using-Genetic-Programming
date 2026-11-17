@@ -1,0 +1,10 @@
+Model,Model Type,Train RMSE,Test RMSE,Test MAE,Test R2,Complexity (Nodes/Params),Interpretability,Discovered Equation,LaTeX,Train Time (s),Inference (us/sample)
+Genetic Programming (Ours),Symbolic Regression (AST),0.8032363180025921,0.9894564137374491,0.6784489579406916,0.4779771926774239,5,Analytical Equation,2*sin(sin(x)),2 \sin{\left(\sin{\left(x \right)} \right)},0.038,9.8
+Linear Regression,Linear / White-Box,0.5584855229480669,0.7751200241153655,0.5924794811860442,0.679643120469621,2,High (Linear Coefficients),N/A (Implicit/Black-Box),N/A,0.0076,6.41
+Ridge Regression,Regularized Linear,0.5639006825752513,0.8128195532904401,0.6006654418045715,0.6477228883088182,2,High (Shrunk Coefficients),N/A (Implicit/Black-Box),N/A,0.006,6.77
+Polynomial Reg (Deg 2),Polynomial Expansion,0.15592908653550966,0.25914772808662256,0.18403433835118502,0.9641911022102656,4,Medium (Polynomial Terms),N/A (Implicit/Black-Box),N/A,0.0034,48.11
+Polynomial Reg (Deg 3),Polynomial Expansion,0.07923761181083554,0.11044313855565642,0.07863479634279472,0.993496103498035,5,Medium-Low (Many Terms),N/A (Implicit/Black-Box),N/A,0.0027,22.74
+Decision Tree (CART),Decision Tree,0.0312952131814684,0.20473874610239853,0.1402677592318911,0.9776490379967342,35,Medium (Hierarchical Splits),N/A (Implicit/Black-Box),N/A,0.0016,8.53
+Random Forest,Ensemble (Bagging),0.07316742635223086,0.2531412925871752,0.13283773349719366,0.9658317977892776,1368,Low (Black-Box Forest),N/A (Implicit/Black-Box),N/A,0.064,449.96
+Gradient Boosting,Ensemble (Boosting),0.008339707769180972,0.20720403651915606,0.13359057401119923,0.977107534671741,740,Low (Sequential Additive Trees),N/A (Implicit/Black-Box),N/A,0.0295,30.91
+MLP Neural Network,Neural Network,0.9666523957828498,1.3039284814118508,0.6268110078923584,0.09342511166200962,609,Very Low (Opaque Weights),N/A (Implicit/Black-Box),N/A,0.4603,27.39

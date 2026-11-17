@@ -1,0 +1,10 @@
+Model,Model Type,Train RMSE,Test RMSE,Test MAE,Test R2,Complexity (Nodes/Params),Interpretability,Discovered Equation,LaTeX,Train Time (s),Inference (us/sample)
+Genetic Programming (Ours),Symbolic Regression (AST),0.8764606018030444,1.1863215158621006,1.0268716203880845,0.4291724101575385,16,Analytical Equation,length + cos(length**2/(length*(phase - 4.556) + phase)),length + \cos{\left(\frac{length^{2}}{length \left(phase - 4.556\right) + phase} \right)},1.731,3.61
+Linear Regression,Linear / White-Box,0.9248850080817089,1.192195092210445,1.0170662395888952,0.42350598772490955,3,High (Linear Coefficients),N/A (Implicit/Black-Box),N/A,0.0121,1.77
+Ridge Regression,Regularized Linear,0.9249002153614662,1.1915088493692374,1.0163743878199951,0.42416947146342787,3,High (Shrunk Coefficients),N/A (Implicit/Black-Box),N/A,0.007,1.75
+Polynomial Reg (Deg 2),Polynomial Expansion,0.8854442693520943,1.2229578382516937,1.0399611737502998,0.3933710791817637,7,Medium (Polynomial Terms),N/A (Implicit/Black-Box),N/A,0.0017,5.98
+Polynomial Reg (Deg 3),Polynomial Expansion,0.7811137133630397,1.0713400957161467,0.9343336158104358,0.5344622968536341,11,Medium-Low (Many Terms),N/A (Implicit/Black-Box),N/A,0.0012,6.45
+Decision Tree (CART),Decision Tree,0.39379012511335443,0.8195845777803415,0.622285159324579,0.7275494450885148,55,Medium (Hierarchical Splits),N/A (Implicit/Black-Box),N/A,0.0059,2.34
+Random Forest,Ensemble (Bagging),0.34282652677766606,0.7988213934364384,0.5904622902112718,0.7411789968544387,2624,Low (Black-Box Forest),N/A (Implicit/Black-Box),N/A,0.0616,121.19
+Gradient Boosting,Ensemble (Boosting),0.15076088065738685,0.5062980672543076,0.3715317372264216,0.8960288900011779,750,Low (Sequential Additive Trees),N/A (Implicit/Black-Box),N/A,0.029,5.51
+MLP Neural Network,Neural Network,1.2071784883772128,1.2796019428601009,1.0661627595096128,0.3358748559043494,641,Very Low (Opaque Weights),N/A (Implicit/Black-Box),N/A,0.1416,6.38
